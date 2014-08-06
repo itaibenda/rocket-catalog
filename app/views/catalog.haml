@@ -1,0 +1,8 @@
+#catalog{:"ng-controller" => "MainController as mainCtrl"}
+  %h3 Rocket Catalog
+  %tab-set
+    %tab{:"ng-repeat" => "rocket in mainCtrl.rockets", :"title" => "{{rocket.name}}"}
+      %div Caliber: {{rocket.caliber}}mm
+      %div Length: {{rocket.length}}cm
+      %div Weight: {{rocket.weight}}kg
+      %div War Header Weight: {{rocket.warHeadWeight}}kg

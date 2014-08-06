@@ -1,0 +1,13 @@
+<div id="catalog-container" ng-controller="MainController as mainCtrl">
+<h3>Rocket Catalog</h3>
+<tab-set>
+<tab ng-repeat="rocket in mainCtrl.rockets" title="{{rocket.name}}">
+<div class="detail">Caliber: {{rocket.caliber}}mm</div>
+<div class="detail">Length: {{rocket.length}}cm</div>
+<div class="detail">Weight: {{rocket.weight}}kg</div>
+<div class="detail">War Head Weight: {{rocket.warHeadWeight}}kg</div>
+<div class="detail">Max Range: {{rocket.maxRange}}km</div>
+<div class="detail">Manufacturer: {{rocket.manufacturer}}</div>
+</tab>
+</tab-set>
+</div>
