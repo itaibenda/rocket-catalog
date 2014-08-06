@@ -10,7 +10,7 @@ angular.module('rocketCatalogAppInternal', ['rocketFactoryAppInternal', 'angular
 //load only the internal module in tests and mock any module dependency
 //the only exception to load this module in tests in to test the config & run blocks
 angular
-  .module('rocketCatalogApp', ['rocketCatalogAppInternal', 'rocketCatalogTranslations', 'wixAngular'])
+  .module('rocketCatalogApp', ['rocketCatalogAppInternal', 'rocketCatalogTranslations', 'wixAngular', 'ngAnimate'])
   .config(function () {
     return;
   });
